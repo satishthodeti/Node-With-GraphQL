@@ -1,8 +1,14 @@
-🚀 GRAPHQL QUERIES & MUTATIONS FOR USERS & ROLES
-This document contains all CRUD GraphQL operations for the User and Role models based on your current schema using Apollo Server with Express and PostgreSQL.
+# 🚀 GraphQL Queries & Mutations – Users & Roles
 
-🔍 USERS — QUERIES
-✅ GET ALL USERS
+This document contains all **CRUD operations** for `User` and `Role` models in a Node.js + Apollo Server + PostgreSQL setup.
+
+---
+
+## 🔍 USERS – QUERIES
+
+### ✅ Get All Users
+
+```graphql
 query GetUsers {
   users {
     id
@@ -14,9 +20,13 @@ query GetUsers {
     }
   }
 }
+````
 
+---
 
-✅ GET USER BY ID
+### ✅ Get User by ID
+
+```graphql
 query GetUserById {
   user(id: 1) {
     id
@@ -28,10 +38,15 @@ query GetUserById {
     }
   }
 }
+```
 
+---
 
-✍️ USERS — MUTATIONS
-➕ CREATE USER
+## ✍️ USERS – MUTATIONS
+
+### ➕ Create User
+
+```graphql
 mutation CreateUser {
   createUser(
     username: "john_doe"
@@ -47,9 +62,13 @@ mutation CreateUser {
     }
   }
 }
+```
 
+---
 
-♻️ UPDATE USER
+### ♻️ Update User
+
+```graphql
 mutation UpdateUser {
   updateUser(
     id: 1
@@ -66,19 +85,28 @@ mutation UpdateUser {
     }
   }
 }
+```
 
+---
 
-❌ DELETE USER
+### ❌ Delete User
+
+```graphql
 mutation DeleteUser {
   deleteUser(id: 1) {
     id
     username
   }
 }
+```
 
+---
 
-🔍 ROLES — QUERIES
-✅ GET ALL ROLES
+## 🔍 ROLES – QUERIES
+
+### ✅ Get All Roles
+
+```graphql
 query GetRoles {
   roles {
     id
@@ -86,9 +114,13 @@ query GetRoles {
     description
   }
 }
+```
 
+---
 
-✅ GET ROLE BY ID
+### ✅ Get Role by ID
+
+```graphql
 query GetRoleById {
   role(id: 1) {
     id
@@ -96,10 +128,15 @@ query GetRoleById {
     description
   }
 }
+```
 
+---
 
-✍️ ROLES — MUTATIONS
-➕ CREATE ROLE
+## ✍️ ROLES – MUTATIONS
+
+### ➕ Create Role
+
+```graphql
 mutation CreateRole {
   createRole(
     name: "ADMIN"
@@ -110,9 +147,13 @@ mutation CreateRole {
     description
   }
 }
+```
 
+---
 
-♻️ UPDATE ROLE
+### ♻️ Update Role
+
+```graphql
 mutation UpdateRole {
   updateRole(
     id: 1
@@ -124,12 +165,17 @@ mutation UpdateRole {
     description
   }
 }
+```
 
+---
 
-❌ DELETE ROLE
+### ❌ Delete Role
+
+```graphql
 mutation DeleteRole {
   deleteRole(id: 1) {
     id
     name
   }
 }
+```
