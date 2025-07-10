@@ -17,7 +17,7 @@ graphql-user-role-api/
 ├── .env                # Environment variables
 ├── package.json
 ├── README.md
-└── graphql-queries-and-mutations.md
+└── graphql-queries.md
 
 ````
 
