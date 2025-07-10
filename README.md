@@ -103,7 +103,7 @@ Use this to run queries, mutations, and test the schema interactively.
 
 ## 🧪 Sample GraphQL Operations
 
-See [`graphql-queries-and-mutations.md`](./graphql-queries-and-mutations.md) for all CRUD operations:
+See [`graphql-queries-and-mutations.md`](./graphql-queries.md) for all CRUD operations:
 
 * Create / Read / Update / Delete Users
 * Create / Read / Update / Delete Roles
